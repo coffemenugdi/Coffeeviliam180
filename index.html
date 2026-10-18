@@ -5,12 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#f5eee3">
 <title>کافه ویلیام | COFFEE VILIAM</title>
-<meta name="description"
-content="کافه ویلیام؛ انواع قهوه گرم، نوشیدنی‌های گرم و سرد و بستنی.">
+<meta name="description" content="کافه ویلیام؛ انواع قهوه گرم، نوشیدنی‌های گرم و سرد، بستنی و غذای گرم.">
 <style>
-/* =========================
-   تنظیمات اصلی
-========================= */
 :root {
     --cream: #f5eee3;
     --cream-light: #fffaf3;
@@ -19,7 +15,7 @@ content="کافه ویلیام؛ انواع قهوه گرم، نوشیدنی‌�
     --brown-soft: #8b6b54;
     --gold: #b99265;
     --border: #e8d8c5;
-    --shadow: 0 8px 30px rgba(65, 43, 29, .07);
+    --shadow: 0 8px 30px rgba(65,43,29,.07);
 }
 * {
     box-sizing: border-box;
@@ -44,24 +40,19 @@ a {
 }
 button {
     font: inherit;
-}
-button,
-a {
     -webkit-tap-highlight-color: transparent;
 }
 .container {
     width: min(1100px, 90%);
     margin-inline: auto;
 }
-/* =========================
-   سربرگ
-========================= */
+/* سربرگ */
 .header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255, 250, 243, .94);
-    border-bottom: 1px solid rgba(104, 70, 50, .10);
+    background: rgba(255,250,243,.94);
+    border-bottom: 1px solid rgba(104,70,50,.10);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
 }
@@ -99,28 +90,25 @@ a {
 .header-location:active {
     transform: scale(.96);
 }
-/* =========================
-   بخش معرفی
-========================= */
+/* معرفی */
 .hero {
     position: relative;
     isolation: isolate;
     overflow: hidden;
     text-align: center;
     padding: 95px 20px 75px;
-    background:
-        radial-gradient(
-            ellipse at 50% 0%,
-            rgba(255,255,255,.8),
-            transparent 65%
-        );
+    background: radial-gradient(
+        ellipse at 50% 0%,
+        rgba(255,255,255,.8),
+        transparent 65%
+    );
 }
 .hero::before,
 .hero::after {
     content: "☕";
     position: absolute;
     z-index: -1;
-    font-size: clamp(75px, 13vw, 140px);
+    font-size: clamp(75px,13vw,140px);
     opacity: .07;
     pointer-events: none;
     animation: coffeeFloat 7s ease-in-out infinite;
@@ -144,7 +132,7 @@ a {
     animation: fadeUp .7s ease-out both;
 }
 .hero h1 {
-    font-size: clamp(42px, 8vw, 76px);
+    font-size: clamp(42px,8vw,76px);
     line-height: 1.4;
     color: var(--brown-dark);
     font-weight: 900;
@@ -169,9 +157,7 @@ a {
     gap: 12px;
     animation: fadeUp 1s ease-out both;
 }
-/* =========================
-   دکمه‌ها
-========================= */
+/* دکمه‌ها */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -211,9 +197,7 @@ a {
 .btn:active {
     transform: scale(.97);
 }
-/* =========================
-   معرفی منو
-========================= */
+/* منو */
 .menu-section {
     padding: 65px 0 80px;
 }
@@ -230,7 +214,7 @@ a {
 }
 .section-heading h2 {
     color: var(--brown-dark);
-    font-size: clamp(25px, 5vw, 36px);
+    font-size: clamp(25px,5vw,36px);
     line-height: 1.6;
 }
 .section-heading p {
@@ -238,9 +222,7 @@ a {
     font-size: 13px;
     margin-top: 8px;
 }
-/* =========================
-   دسته‌بندی‌های منو
-========================= */
+/* دسته‌بندی‌ها */
 .category-nav {
     display: flex;
     align-items: center;
@@ -278,9 +260,7 @@ a {
     border-color: var(--brown);
     color: white;
 }
-/* =========================
-   بخش‌های محصولات
-========================= */
+/* دسته‌های محصولات */
 .menu-category {
     margin-top: 55px;
     scroll-margin-top: 100px;
@@ -316,12 +296,10 @@ a {
     flex: 1;
     margin-right: 5px;
 }
-/* =========================
-   کارت محصولات
-========================= */
+/* کارت محصولات */
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3,minmax(0,1fr));
     gap: 15px;
 }
 .product-card {
@@ -389,9 +367,7 @@ a {
     color: #a08a76;
     font-size: 11px;
 }
-/* =========================
-   موقعیت کافه
-========================= */
+/* موقعیت کافه */
 .location-section {
     padding: 65px 0;
     background: #eaddca;
@@ -427,15 +403,13 @@ a {
     justify-content: center;
     gap: 10px;
 }
-/* =========================
-   اطلاعات کافه
-========================= */
+/* اطلاعات کافه */
 .info-section {
     padding: 65px 0;
 }
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3,minmax(0,1fr));
     gap: 15px;
 }
 .info-card {
@@ -467,9 +441,7 @@ a {
 .info-card a:hover {
     color: var(--brown-dark);
 }
-/* =========================
-   پابرگ
-========================= */
+/* پابرگ */
 .footer {
     background: var(--brown-dark);
     color: #f5e8d8;
@@ -494,9 +466,7 @@ a {
     font-size: 11px;
     color: #bba590;
 }
-/* =========================
-   دکمه بازگشت به بالا
-========================= */
+/* بازگشت به بالا */
 .back-to-top {
     position: fixed;
     left: 18px;
@@ -527,49 +497,44 @@ a {
 .back-to-top:active {
     transform: scale(.94);
 }
-/* =========================
-   انیمیشن‌ها
-========================= */
+/* انیمیشن‌ها */
 @keyframes fadeUp {
     from {
         opacity: 0;
-        transform: translate3d(0, 16px, 0);
+        transform: translate3d(0,16px,0);
     }
     to {
         opacity: 1;
-        transform: translate3d(0, 0, 0);
+        transform: translate3d(0,0,0);
     }
 }
 @keyframes coffeeFloat {
-    0%, 100% {
-        transform: translate3d(0, 0, 0) rotate(-4deg);
+    0%,100% {
+        transform: translate3d(0,0,0) rotate(-4deg);
     }
     50% {
-        transform: translate3d(0, -10px, 0) rotate(4deg);
+        transform: translate3d(0,-10px,0) rotate(4deg);
     }
 }
-/* عناصر هنگام ورود به صفحه */
 .reveal {
     opacity: 0;
-    transform: translate3d(0, 16px, 0);
+    transform: translate3d(0,16px,0);
     transition:
         opacity .55s ease,
-        transform .55s cubic-bezier(.2, .65, .3, 1);
-    transition-delay: var(--delay, 0ms);
+        transform .55s cubic-bezier(.2,.65,.3,1);
+    transition-delay: var(--delay,0ms);
 }
 .reveal.visible {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0,0,0);
 }
-/* =========================
-   نسخه موبایل
-========================= */
-@media (max-width: 760px) {
+/* موبایل */
+@media (max-width:760px) {
     .hero {
         padding: 75px 18px 60px;
     }
     .products-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2,minmax(0,1fr));
         gap: 11px;
     }
     .product-card {
@@ -592,7 +557,7 @@ a {
     }
     .category-nav {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2,minmax(0,1fr));
         gap: 9px;
         margin-bottom: 35px;
     }
@@ -626,7 +591,7 @@ a {
         padding: 30px 17px;
     }
 }
-@media (max-width: 360px) {
+@media (max-width:360px) {
     .container {
         width: 92%;
     }
@@ -644,8 +609,7 @@ a {
         font-size: 17px;
     }
 }
-/* احترام به تنظیم کاهش حرکت دستگاه */
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion:reduce) {
     *,
     *::before,
     *::after {
@@ -661,9 +625,6 @@ a {
 </style>
 </head>
 <body>
-<!-- =========================
-     سربرگ
-========================= -->
 <header class="header">
     <div class="container header-inner">
         <a href="#home" class="logo">
@@ -679,16 +640,9 @@ a {
     </div>
 </header>
 <main>
-<!-- =========================
-     معرفی کافه
-========================= -->
 <section class="hero" id="home">
-    <div class="hero-label">
-        WELCOME TO COFFEE VILIAM
-    </div>
-    <h1>
-        کافه <span>ویلیام</span>
-    </h1>
+    <div class="hero-label">WELCOME TO COFFEE VILIAM</div>
+    <h1>کافه <span>ویلیام</span></h1>
     <p class="hero-description">
         طعم اصیل قهوه، عطر دلنشین و لحظه‌هایی
         برای لذت بردن از زندگی.
@@ -708,306 +662,309 @@ a {
         </a>
     </div>
 </section>
-<!-- =========================
-     منو
-========================= -->
 <section class="menu-section" id="menu">
-    <div class="container">
-        <div class="section-heading reveal">
-            <div class="eyebrow">OUR MENU</div>
-            <h2>منوی کافه ویلیام</h2>
-            <p>
-                نوشیدنی مورد علاقه‌ات رو انتخاب کن 🤎
-            </p>
-        </div>
-        <!-- دکمه‌های دسته‌بندی -->
-        <nav class="category-nav reveal" aria-label="دسته‌بندی منو">
-            <button
-                type="button"
-                class="category-btn active"
-                data-target="hot-coffee">
-                ☕ قهوه گرم
-            </button>
-            <button
-                type="button"
-                class="category-btn"
-                data-target="hot-drinks">
-                🍵 نوشیدنی گرم
-            </button>
-            <button
-                type="button"
-                class="category-btn"
-                data-target="cold-drinks">
-                🧊 نوشیدنی سرد
-            </button>
-            <button
-                type="button"
-                class="category-btn"
-                data-target="ice-cream">
-                🍦 بستنی
-            </button>
-        </nav>
-        <!-- =====================
-             قهوه گرم
-        ====================== -->
-        <section class="menu-category" id="hot-coffee">
-            <div class="category-heading reveal">
-                <div class="heading-icon">☕</div>
-                <div>
-                    <h3>قهوه گرم</h3>
-                    <p>انتخابی برای عاشقان قهوه</p>
-                </div>
-                <div class="category-line"></div>
-            </div>
-            <div class="products-grid">
-                <article class="product-card reveal">
-                    <div class="product-icon">☕</div>
-                    <div class="product-info">
-                        <h4>قهوه ۸۰/۲۰</h4>
-                        <p>قهوه گرم</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">☕</div>
-                    <div class="product-info">
-                        <h4>قهوه ۷۰/۳۰</h4>
-                        <p>قهوه گرم</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">☕</div>
-                    <div class="product-info">
-                        <h4>قهوه ۵۰/۵۰</h4>
-                        <p>قهوه گرم</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">☕</div>
-                    <div class="product-info">
-                        <h4>قهوه ۶۰/۴۰</h4>
-                        <p>قهوه گرم</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🤎</div>
-                    <div class="product-info">
-                        <h4>قهوه آمیکو</h4>
-                        <p>انتخاب قهوه</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🤎</div>
-                    <div class="product-info">
-                        <h4>قهوه ماما لوجیا</h4>
-                        <p>انتخاب قهوه</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🌱</div>
-                    <div class="product-info">
-                        <h4>قهوه عربیکا</h4>
-                        <p>قهوه</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">☕</div>
-                    <div class="product-info">
-                        <h4>قهوه ایلی</h4>
-                        <p>انتخاب قهوه</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">☕</div>
-                    <div class="product-info">
-                        <h4>قهوه لاوازا</h4>
-                        <p>انتخاب قهوه</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <!-- =====================
-             نوشیدنی گرم
-        ====================== -->
-        <section class="menu-category" id="hot-drinks">
-            <div class="category-heading reveal">
-                <div class="heading-icon">🍵</div>
-                <div>
-                    <h3>نوشیدنی گرم</h3>
-                    <p>گرم، دلنشین و دوست‌داشتنی</p>
-                </div>
-                <div class="category-line"></div>
-            </div>
-            <div class="products-grid">
-                <article class="product-card reveal">
-                    <div class="product-icon">☕</div>
-                    <div class="product-info">
-                        <h4>کاپوچینو</h4>
-                        <p>نوشیدنی گرم</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🥛</div>
-                    <div class="product-info">
-                        <h4>نسکافه</h4>
-                        <p>نوشیدنی گرم</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🍫</div>
-                    <div class="product-info">
-                        <h4>هات چاکلت</h4>
-                        <p>شکلات داغ</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🍵</div>
-                    <div class="product-info">
-                        <h4>چای ماسالا</h4>
-                        <p>نوشیدنی گرم</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🍵</div>
-                    <div class="product-info">
-                        <h4>چای کرک</h4>
-                        <p>نوشیدنی گرم</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🥛</div>
-                    <div class="product-info">
-                        <h4>شیر پسته زعفران</h4>
-                        <p>نوشیدنی گرم</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🍃</div>
-                    <div class="product-info">
-                        <h4>چای سبز</h4>
-                        <p>نوشیدنی گرم</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <!-- =====================
-             نوشیدنی سرد
-        ====================== -->
-        <section class="menu-category" id="cold-drinks">
-            <div class="category-heading reveal">
-                <div class="heading-icon">🧊</div>
-                <div>
-                    <h3>نوشیدنی سرد</h3>
-                    <p>خنک و دلچسب</p>
-                </div>
-                <div class="category-line"></div>
-            </div>
-            <div class="products-grid">
-                <article class="product-card reveal">
-                    <div class="product-icon">🧋</div>
-                    <div class="product-info">
-                        <h4>آیس کارامل</h4>
-                        <p>نوشیدنی سرد</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🧊</div>
-                    <div class="product-info">
-                        <h4>آیس آمریکانو</h4>
-                        <p>قهوه سرد</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🥤</div>
-                    <div class="product-info">
-                        <h4>آیس لاته</h4>
-                        <p>قهوه سرد</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🍹</div>
-                    <div class="product-info">
-                        <h4>آیس پک</h4>
-                        <p>نوشیدنی سرد</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🥕</div>
-                    <div class="product-info">
-                        <h4>آب هویج</h4>
-                        <p>آبمیوه</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🍈</div>
-                    <div class="product-info">
-                        <h4>آب طالبی</h4>
-                        <p>آبمیوه</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🍌</div>
-                    <div class="product-info">
-                        <h4>شیر موز</h4>
-                        <p>نوشیدنی سرد</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🥤</div>
-                    <div class="product-info">
-                        <h4>معجون</h4>
-                        <p>نوشیدنی مقوی</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <!-- =====================
-             بستنی
-        ====================== -->
-        <section class="menu-category" id="ice-cream">
-            <div class="category-heading reveal">
-                <div class="heading-icon">🍦</div>
-                <div>
-                    <h3>بستنی</h3>
-                    <p>یک انتخاب شیرین</p>
-                </div>
-                <div class="category-line"></div>
-            </div>
-            <div class="products-grid">
-                <article class="product-card reveal">
-                    <div class="product-icon">🍓</div>
-                    <div class="product-info">
-                        <h4>بستنی میوه‌ای</h4>
-                        <p>بستنی</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🍦</div>
-                    <div class="product-info">
-                        <h4>بستنی سنتی</h4>
-                        <p>بستنی</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🍨</div>
-                    <div class="product-info">
-                        <h4>بستنی مغز دار</h4>
-                        <p>بستنی</p>
-                    </div>
-                </article>
-                <article class="product-card reveal">
-                    <div class="product-icon">🍧</div>
-                    <div class="product-info">
-                        <h4>فالوده</h4>
-                        <p>دسر خنک</p>
-                    </div>
-                </article>
-            </div>
-        </section>
+<div class="container">
+    <div class="section-heading reveal">
+        <div class="eyebrow">OUR MENU</div>
+        <h2>منوی کافه ویلیام</h2>
+        <p>نوشیدنی مورد علاقه‌ات رو انتخاب کن 🤎</p>
     </div>
+    <nav class="category-nav reveal" aria-label="دسته‌بندی منو">
+        <button type="button" class="category-btn active" data-target="hot-coffee">
+            ☕ قهوه گرم
+        </button>
+        <button type="button" class="category-btn" data-target="hot-drinks">
+            🍵 نوشیدنی گرم
+        </button>
+        <button type="button" class="category-btn" data-target="cold-drinks">
+            🧊 نوشیدنی سرد
+        </button>
+        <button type="button" class="category-btn" data-target="ice-cream">
+            🍦 بستنی
+        </button>
+        <button type="button" class="category-btn" data-target="hot-food">
+            🍔🔥 غذای گرم
+        </button>
+    </nav>
+    <!-- قهوه گرم -->
+    <section class="menu-category" id="hot-coffee">
+        <div class="category-heading reveal">
+            <div class="heading-icon">☕</div>
+            <div>
+                <h3>قهوه گرم</h3>
+                <p>انتخابی برای عاشقان قهوه</p>
+            </div>
+            <div class="category-line"></div>
+        </div>
+        <div class="products-grid">
+            <article class="product-card reveal">
+                <div class="product-icon">☕</div>
+                <div class="product-info">
+                    <h4>قهوه ۸۰/۲۰</h4>
+                    <p>قهوه گرم</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">☕</div>
+                <div class="product-info">
+                    <h4>قهوه ۷۰/۳۰</h4>
+                    <p>قهوه گرم</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">☕</div>
+                <div class="product-info">
+                    <h4>قهوه ۵۰/۵۰</h4>
+                    <p>قهوه گرم</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">☕</div>
+                <div class="product-info">
+                    <h4>قهوه ۶۰/۴۰</h4>
+                    <p>قهوه گرم</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🤎</div>
+                <div class="product-info">
+                    <h4>قهوه آمیکو</h4>
+                    <p>انتخاب قهوه</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🤎</div>
+                <div class="product-info">
+                    <h4>قهوه ماما لوجیا</h4>
+                    <p>انتخاب قهوه</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🌱</div>
+                <div class="product-info">
+                    <h4>قهوه عربیکا</h4>
+                    <p>قهوه</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">☕</div>
+                <div class="product-info">
+                    <h4>قهوه ایلی</h4>
+                    <p>انتخاب قهوه</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">☕</div>
+                <div class="product-info">
+                    <h4>قهوه لاوازا</h4>
+                    <p>انتخاب قهوه</p>
+                </div>
+            </article>
+            <!-- آمریکانو اضافه شد -->
+            <article class="product-card reveal">
+                <div class="product-icon">☕</div>
+                <div class="product-info">
+                    <h4>آمریکانو</h4>
+                    <p>Americano · قهوه گرم</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- نوشیدنی گرم -->
+    <section class="menu-category" id="hot-drinks">
+        <div class="category-heading reveal">
+            <div class="heading-icon">🍵</div>
+            <div>
+                <h3>نوشیدنی گرم</h3>
+                <p>گرم، دلنشین و دوست‌داشتنی</p>
+            </div>
+            <div class="category-line"></div>
+        </div>
+        <div class="products-grid">
+            <article class="product-card reveal">
+                <div class="product-icon">☕</div>
+                <div class="product-info">
+                    <h4>کاپوچینو</h4>
+                    <p>نوشیدنی گرم</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🥛</div>
+                <div class="product-info">
+                    <h4>نسکافه</h4>
+                    <p>نوشیدنی گرم</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🍫</div>
+                <div class="product-info">
+                    <h4>هات چاکلت</h4>
+                    <p>شکلات داغ</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🍵</div>
+                <div class="product-info">
+                    <h4>چای ماسالا</h4>
+                    <p>نوشیدنی گرم</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🍵</div>
+                <div class="product-info">
+                    <h4>چای کرک</h4>
+                    <p>نوشیدنی گرم</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🥛</div>
+                <div class="product-info">
+                    <h4>شیر پسته زعفران</h4>
+                    <p>نوشیدنی گرم</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🍃</div>
+                <div class="product-info">
+                    <h4>چای سبز</h4>
+                    <p>نوشیدنی گرم</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- نوشیدنی سرد -->
+    <section class="menu-category" id="cold-drinks">
+        <div class="category-heading reveal">
+            <div class="heading-icon">🧊</div>
+            <div>
+                <h3>نوشیدنی سرد</h3>
+                <p>خنک و دلچسب</p>
+            </div>
+            <div class="category-line"></div>
+        </div>
+        <div class="products-grid">
+            <article class="product-card reveal">
+                <div class="product-icon">🧋</div>
+                <div class="product-info">
+                    <h4>آیس کارامل</h4>
+                    <p>نوشیدنی سرد</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🧊</div>
+                <div class="product-info">
+                    <h4>آیس آمریکانو</h4>
+                    <p>قهوه سرد</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🥤</div>
+                <div class="product-info">
+                    <h4>آیس لاته</h4>
+                    <p>قهوه سرد</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🍹</div>
+                <div class="product-info">
+                    <h4>آیس پک</h4>
+                    <p>نوشیدنی سرد</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🥕</div>
+                <div class="product-info">
+                    <h4>آب هویج</h4>
+                    <p>آبمیوه</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🍈</div>
+                <div class="product-info">
+                    <h4>آب طالبی</h4>
+                    <p>آبمیوه</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🍌</div>
+                <div class="product-info">
+                    <h4>شیر موز</h4>
+                    <p>نوشیدنی سرد</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🥤</div>
+                <div class="product-info">
+                    <h4>معجون</h4>
+                    <p>نوشیدنی مقوی</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- بستنی -->
+    <section class="menu-category" id="ice-cream">
+        <div class="category-heading reveal">
+            <div class="heading-icon">🍦</div>
+            <div>
+                <h3>بستنی</h3>
+                <p>یک انتخاب شیرین</p>
+            </div>
+            <div class="category-line"></div>
+        </div>
+        <div class="products-grid">
+            <article class="product-card reveal">
+                <div class="product-icon">🍓</div>
+                <div class="product-info">
+                    <h4>بستنی میوه‌ای</h4>
+                    <p>بستنی</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🍦</div>
+                <div class="product-info">
+                    <h4>بستنی سنتی</h4>
+                    <p>بستنی</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🍨</div>
+                <div class="product-info">
+                    <h4>بستنی مغز دار</h4>
+                    <p>بستنی</p>
+                </div>
+            </article>
+            <article class="product-card reveal">
+                <div class="product-icon">🍧</div>
+                <div class="product-info">
+                    <h4>فالوده</h4>
+                    <p>دسر خنک</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- بخش جدید غذای گرم -->
+    <section class="menu-category" id="hot-food">
+        <div class="category-heading reveal">
+            <div class="heading-icon">🍔</div>
+            <div>
+                <h3>غذای گرم</h3>
+                <p>یه انتخاب خوشمزه و دلچسب 🔥</p>
+            </div>
+            <div class="category-line"></div>
+        </div>
+        <div class="products-grid">
+            <article class="product-card reveal">
+                <div class="product-icon">🥪</div>
+                <div class="product-info">
+                    <h4>اسنک</h4>
+                    <p>غذای گرم و خوشمزه</p>
+                </div>
+            </article>
+        </div>
+    </section>
+</div>
 </section>
-<!-- =========================
-     موقعیت کافه
-========================= -->
+<!-- موقعیت کافه -->
 <section class="location-section" id="location">
     <div class="container">
         <div class="location-card reveal">
@@ -1039,36 +996,27 @@ a {
         </div>
     </div>
 </section>
-<!-- =========================
-     اطلاعات کافه
-========================= -->
+<!-- اطلاعات کافه -->
 <section class="info-section" id="contact">
     <div class="container">
         <div class="section-heading reveal">
             <div class="eyebrow">FIND US</div>
             <h2>اطلاعات کافه</h2>
-            <p>
-                برای دیدار و تجربه یک فنجان قهوه منتظرت هستیم.
-            </p>
+            <p>برای دیدار و تجربه یک فنجان قهوه منتظرت هستیم.</p>
         </div>
         <div class="info-grid">
             <div class="info-card reveal">
                 <div class="info-icon">📍</div>
                 <div>
                     <h3>آدرس کافه</h3>
-                    <p>
-                        دهدشت، ۱۸۰ دستگاه،
-                        کمربندی دوم
-                    </p>
+                    <p>دهدشت، ۱۸۰ دستگاه، کمربندی دوم</p>
                 </div>
             </div>
             <div class="info-card reveal">
                 <div class="info-icon">🕐</div>
                 <div>
                     <h3>ساعت کاری</h3>
-                    <p>
-                        هر روز از ۷ صبح تا ۱۱ شب
-                    </p>
+                    <p>هر روز از ۷ صبح تا ۱۱ شب</p>
                 </div>
             </div>
             <div class="info-card reveal">
@@ -1087,21 +1035,15 @@ a {
     </div>
 </section>
 </main>
-<!-- =========================
-     پابرگ
-========================= -->
 <footer class="footer">
     <div class="footer-logo">
         COFFEE <span>VILIAM</span> ☕
     </div>
-    <p>
-        طعم اصیل قهوه، لحظه‌های شیرین زندگی 🤎
-    </p>
+    <p>طعم اصیل قهوه، لحظه‌های شیرین زندگی 🤎</p>
     <div class="copyright">
         © 2026 Coffee Viliam — تمام حقوق محفوظ است.
     </div>
 </footer>
-<!-- دکمه بازگشت به بالا -->
 <button
     type="button"
     class="back-to-top"
@@ -1110,12 +1052,10 @@ a {
     ↑
 </button>
 <script>
-/* =========================
-   انیمیشن سبک هنگام اسکرول
-========================= */
 const reduceMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
 ).matches;
+/* انیمیشن ورود عناصر */
 const revealElements = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window && !reduceMotion) {
     const revealObserver = new IntersectionObserver(
@@ -1133,7 +1073,6 @@ if ("IntersectionObserver" in window && !reduceMotion) {
         }
     );
     revealElements.forEach((element, index) => {
-        /* تأخیر بسیار کوتاه برای حفظ روانی انیمیشن */
         element.style.setProperty(
             "--delay",
             (index % 3) * 45 + "ms"
@@ -1145,16 +1084,11 @@ if ("IntersectionObserver" in window && !reduceMotion) {
         element.classList.add("visible");
     });
 }
-/* =========================
-   رفتن به دسته‌بندی انتخاب‌شده
-========================= */
-const categoryButtons = document.querySelectorAll(
-    ".category-btn"
-);
+/* پیمایش دسته‌بندی‌ها */
+const categoryButtons = document.querySelectorAll(".category-btn");
 categoryButtons.forEach((button) => {
     button.addEventListener("click", () => {
-        const targetId = button.dataset.target;
-        const target = document.getElementById(targetId);
+        const target = document.getElementById(button.dataset.target);
         if (!target) return;
         categoryButtons.forEach((item) => {
             item.classList.remove("active");
@@ -1166,12 +1100,8 @@ categoryButtons.forEach((button) => {
         });
     });
 });
-/* =========================
-   تشخیص دسته‌بندی در حال مشاهده
-========================= */
-const menuSections = document.querySelectorAll(
-    ".menu-category"
-);
+/* تشخیص دسته‌بندی در حال مشاهده */
+const menuSections = document.querySelectorAll(".menu-category");
 if ("IntersectionObserver" in window) {
     const sectionObserver = new IntersectionObserver(
         (entries) => {
@@ -1194,16 +1124,11 @@ if ("IntersectionObserver" in window) {
         sectionObserver.observe(section);
     });
 }
-/* =========================
-   دکمه بازگشت به بالا
-========================= */
+/* دکمه بازگشت به بالا */
 const backToTop = document.getElementById("backToTop");
 let scrollTicking = false;
 function updateScrollButton() {
-    backToTop.classList.toggle(
-        "visible",
-        window.scrollY > 450
-    );
+    backToTop.classList.toggle("visible", window.scrollY > 450);
     scrollTicking = false;
 }
 window.addEventListener("scroll", () => {
